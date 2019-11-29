@@ -1,0 +1,5 @@
+{
+	"env": {
+		"MONGO_URL": "mongodb+srv://habits:dx500t@cluster0-5ixtx.mongodb.net/test?retryWrites=true&w=majority"
+	}
+}

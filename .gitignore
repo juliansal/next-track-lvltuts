@@ -18,7 +18,7 @@
 # misc
 .DS_Store
 .env*
-now.json
+# now.json
 
 # debug
 npm-debug.log*
