@@ -13,7 +13,7 @@ const GET_HABITS = gql`
 			}
 		}
 	}
-`
+`;
 
 const HabitList = () => {
 	const { data, loading, error } = useQuery(GET_HABITS)
@@ -26,7 +26,7 @@ const HabitList = () => {
 		console.log("The error occurred in the HabitList" + error)
 		// return <section />
 	}
-	const { habits } = data
+	const { habits } = data || "no data"
 	console.log("The data is " + data)
 	return (
 		<section>
