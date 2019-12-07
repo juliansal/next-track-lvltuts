@@ -9,7 +9,7 @@ const fakeTypeDefs = gql`
 	type Query {
 		sayHello: String
 	}
-`
+`;
 
 const fakeResolvers = {
 	Query: {
