@@ -33,7 +33,7 @@ const typeDefs = mergeTypeDefs([
 const apolloServer = new ApolloServer({ typeDefs, resolvers })
 export const config = {
 	api: {
-		bodyParser: false
+		bodyParser: true
 	}
 }
 
