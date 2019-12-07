@@ -24,10 +24,11 @@ const HabitList = () => {
 	}
 	if (error) {
 		console.log("The error occurred in the HabitList" + error)
+		console.log("The data is " + data)
 		return (<section />)
 	}
-	const { habits } = data || "no data"
-	console.log("The data is " + data)
+	const { habits } = data
+	
 	return (
 		<section>
 			<h2>My Habits List</h2>
