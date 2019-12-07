@@ -18,9 +18,12 @@ const GET_HABITS = gql`
 const HabitList = () => {
 	const { data, loading, error } = useQuery(GET_HABITS)
 
-	if (loading) return <section />
+	if (loading) {
+		console.log("Getting a loading screen " + loading)
+		return <section />
+	}
 	if (error) {
-		console.log(error)
+		console.log("The error occurred in the HabitList" + error)
 		return <section />
 	}
 	const { habits } = data
