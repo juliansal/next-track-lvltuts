@@ -31,7 +31,6 @@ const typeDefs = mergeTypeDefs([
 ])
 
 const apolloServer = new ApolloServer({ typeDefs, resolvers })
-
 export const config = {
 	api: {
 		bodyParser: false
@@ -40,19 +39,4 @@ export const config = {
 
 const server = apolloServer.createHandler({ path: '/api/graphql' })
 export default connectDb(server)
-// Short Way
-// export default (req, res) => {
-// 	res.status(200).json({
-// 		test: "Hallo Kraken"
-// 	})
-// }
 
-// Long Way
-// export default (req, res) => {
-
-// 	res.setHeader('Content-Type', 'application/json')
-// 	res.statusCode = 200
-// 	res.end(JSON.stringify({
-// 		test: "Hello Kraken"
-// 	}))
-// }
