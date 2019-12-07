@@ -20,11 +20,11 @@ const HabitList = () => {
 
 	if (loading) {
 		console.log("Getting a loading screen " + loading)
-		// return <section />
+		return (<section />)
 	}
 	if (error) {
 		console.log("The error occurred in the HabitList" + error)
-		// return <section />
+		return (<section />)
 	}
 	const { habits } = data || "no data"
 	console.log("The data is " + data)
