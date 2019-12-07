@@ -1,4 +1,4 @@
-import Habits from './habits-collection'
+import Habits from './habits'
 
 export const habitsMutations = {
 	Mutation: {

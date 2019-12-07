@@ -1,6 +1,6 @@
 import { GraphQLScalarType } from 'graphql'
 import { Kind } from 'graphql/language'
-import Habits from './habits-collection'
+import Habits from './habits'
 
 export const habitsResolvers = {
 	Query: {
