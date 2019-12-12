@@ -15,5 +15,4 @@ export const HabitsSchema = new Schema({
 	},
 	events: [EventsSchema]
 })
-
 export default mongoose.models.habits || mongoose.model('habits', HabitsSchema)
