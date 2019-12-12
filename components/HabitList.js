@@ -15,10 +15,10 @@ import Habit from './Habit'
 // 	}
 // `;
 
-const GET_HABITS = gql`
-	query HelloQuery {
-		sayHello
-	}`
+// const GET_HABITS = gql`
+// 	query HelloQuery {
+// 		sayHello
+// 	}`
 
 const HabitList = () => {
 	// const { data, loading, error } = useQuery(GET_HABITS)
