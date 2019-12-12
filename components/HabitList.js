@@ -21,7 +21,7 @@ const GET_HABITS = gql`
 	}`
 
 const HabitList = () => {
-	const { data, loading, error } = useQuery(GET_HABITS)
+	// const { data, loading, error } = useQuery(GET_HABITS)
 
 	// if (loading) {
 	// 	console.log("Getting a loading screen " + loading)
