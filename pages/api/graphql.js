@@ -1,9 +1,9 @@
 import { ApolloServer, gql } from 'apollo-server-micro'
 import { mergeResolvers, mergeTypeDefs } from 'graphql-toolkit'
-import connectDb from '../lib/mongoose'
-import { habitsResolvers } from '../src/api/habits/resolvers'
-import { habitsMutations } from '../src/api/habits/mutations'
-import Habits from '../src/api/habits/Habits.graphql'
+import connectDb from '../../lib/mongoose'
+import { habitsResolvers } from '../../src/api/habits/resolvers'
+import { habitsMutations } from '../../src/api/habits/mutations'
+import Habits from '../../src/api/habits/Habits.graphql'
 
 const fakeTypeDefs = gql`
 	type Query {
@@ -37,6 +37,6 @@ export const config = {
 	}
 }
 
-const server = apolloServer.createHandler({ path: '/graphql' })
+const server = apolloServer.createHandler({ path: '/api/graphql' })
 export default connectDb(server)
 
