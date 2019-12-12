@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const links = [
 	{ href: '/', label: 'Home' },
-	{ href: '/graphql', label: 'Graphql' },
+	{ href: '/api/graphql', label: 'Graphql' },
 	{ href: '/about', label: 'About' }
 ].map(link => {
 		link.key = `nav-link-${link.href}-${link.label}`
