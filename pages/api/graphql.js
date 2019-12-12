@@ -37,6 +37,6 @@ export const config = {
 	}
 }
 
-const server = apolloServer.createHandler({ path: '/api/graphql' })
+const server = apolloServer.createHandler({ path: 'pages/api/graphql' })
 export default connectDb(server)
 
