@@ -32,9 +32,9 @@ const HabitList = () => {
 	return (
 		<section>
 			<h2>My Habits List</h2>
-			{ habits.map((habit, index) => (
+			{/* { habits.map((habit, index) => (
 				<Habit key={ habit._id } habit={ habit } index={ index }/>
-			)) }
+			)) } */}
 		</section>
 	)
 }
