@@ -2,18 +2,23 @@ import { useQuery } from '@apollo/react-hooks'
 import gql from 'graphql-tag'
 import Habit from './Habit'
 
+// const GET_HABITS = gql`
+// 	query getHabits {
+// 		habits {
+// 			_id
+// 			name
+// 			events {
+// 				_id
+// 				date
+// 			}
+// 		}
+// 	}
+// `;
+
 const GET_HABITS = gql`
-	query getHabits {
-		habits {
-			_id
-			name
-			events {
-				_id
-				date
-			}
-		}
-	}
-`;
+	query HelloQuery {
+		sayHello
+	}`
 
 const HabitList = () => {
 	const { data, loading, error } = useQuery(GET_HABITS)
