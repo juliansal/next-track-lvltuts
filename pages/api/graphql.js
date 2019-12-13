@@ -20,9 +20,9 @@ const fakeResolvers = {
 }
 
 const resolvers = mergeResolvers([
-	fakeResolvers
-	// habitsResolvers
-	// habitsMutations
+	fakeResolvers,
+	habitsResolvers,
+	habitsMutations
 ])
 
 const typeDefs = mergeTypeDefs([

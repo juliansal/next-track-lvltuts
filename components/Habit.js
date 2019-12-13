@@ -19,7 +19,7 @@ const Habit = ({ habit, index }) => {
 		<HabitArticle>
 			{ console.log(getLast5Days()) }
 			<h3>{ habit.name }</h3>
-			<div className="buttons">
+			{/* <div className="buttons">
 			{ dates.map(date => (
 				<HabitButton 
 					key={ date.getTime() } 
@@ -28,7 +28,7 @@ const Habit = ({ habit, index }) => {
 					events={ habit.events }
 				/>
 			)) }
-			</div>
+			</div> */}
 		</HabitArticle>
 	)
 }

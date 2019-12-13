@@ -3,13 +3,13 @@ scalar Date
 type Habit {
 	_id: ID!
 	name: String!
-	events: [Event]
+	# events: [Event]
 }
 
-type Event {
-	_id: ID!
-	date: Date
-}
+# type Event {
+# 	_id: ID!
+# 	date: Date
+# }
 
 input HabitInput {
 	_id: ID
