@@ -16,7 +16,7 @@ const Home = () => {
 
 	if (loading) return <div />
 
-	if (data) console.log("Data in index: " + data)
+	if (error) console.log("Data in index: " + data)
 
 	return (
 	<Layout pageTitle="Home">
