@@ -8,6 +8,7 @@ export const habitsResolvers = {
 			try {
 				return await Habits.find()
 			} catch (err) {
+				console.log("Error occured in habitsResolvers.habits()")
 				console.log(err)
 			}
 		}
