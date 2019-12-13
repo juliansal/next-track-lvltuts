@@ -13,10 +13,11 @@ const HELLO_QUERY = gql`
 
 const Home = () => {
 	const { data, loading, error } = useQuery(HELLO_QUERY)
-	console.log("Date in index: " + data)
 
 	if (loading) return <div />
-	
+
+	if (data) console.log("Data in index: " + data)
+
 	return (
 	<Layout pageTitle="Home">
 		<div className='hero'>
