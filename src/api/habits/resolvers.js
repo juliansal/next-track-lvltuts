@@ -6,7 +6,9 @@ export const habitsResolvers = {
 	Query: {
 		async habits() {
 			try {
-				return await Habits.find()
+				const habits = await Habits.find()
+				console.log(habits)
+				return habits
 			} catch (err) {
 				console.log("Error occured in habitsResolvers.habits()")
 				console.log(err)
