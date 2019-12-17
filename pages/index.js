@@ -22,6 +22,7 @@ const Home = () => {
 	<Layout pageTitle="Home">
 		<div className='hero'>
 			<h1 className='title'>Level Up Your Life</h1>
+			{ data. }
 			<div className="list">
 				<HabitForm />
 				<HabitList />
