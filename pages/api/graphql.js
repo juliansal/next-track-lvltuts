@@ -1,5 +1,4 @@
-// import { ApolloServer, gql } from 'apollo-server-micro'
-import { ApolloServer, gql } from 'apollo-server'
+import { ApolloServer, gql } from 'apollo-server-micro'
 import { mergeResolvers, mergeTypeDefs } from '@graphql-toolkit/schema-merging'
 import connectDb from '../../lib/mongoose'
 import { habitsResolvers } from '../../src/api/habits/resolvers'
@@ -26,12 +25,10 @@ const resolvers = mergeResolvers([
 	habitsMutations
 ])
 
-const typeDefs = mergeTypeDefs([
-	fakeTypeDefs,
-	Habits
-])
+const typeDefs = mergeTypeDefs([fakeTypeDefs, Habits])
 
 const apolloServer = new ApolloServer({ typeDefs, resolvers })
+
 export const config = {
 	api: {
 		bodyParser: false
@@ -39,6 +36,5 @@ export const config = {
 }
 
 const server = apolloServer.createHandler({ path: '/api/graphql' })
-apolloServer.applyMiddleware({ cors: false })
 export default connectDb(server)
 
